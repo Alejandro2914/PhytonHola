@@ -22,4 +22,4 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/hola-mundopy:${{ github.sha }} .
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/hola-mundojapy:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/hola-mundopy:${{ github.sha }}
